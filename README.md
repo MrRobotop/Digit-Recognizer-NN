@@ -1,7 +1,9 @@
 # Digit-Recognizer-NN
 I use the fundamentals of calculus and linear algebra to build a model using neural networks with 2 layers. Neural network built from scratch.
 
-Our NN will have a simple two-layer architecture. Input layer $a^{[0]}$ will have 784 units corresponding to the 784 pixels in each 28x28 input image. A hidden layer $a^{[1]}$ will have 10 units with ReLU activation, and finally our output layer $a^{[2]}$ will have 10 units corresponding to the ten digit classes with softmax activation.
+The Neural network will have a simple two-layer architecture. Input layer $a^{[0]}$ will have 784 units corresponding to the 784 pixels in each 28x28 input image. A hidden layer $a^{[1]}$ will have 10 units with ReLU activation, and finally our output layer $a^{[2]}$ will have 10 units corresponding to the ten digit classes with softmax activation.
+
+The dataset is supplied by Kaggle: 
 
 **Forward propagation**
 
@@ -28,7 +30,7 @@ $$b^{[1]} := b^{[1]} - \alpha db^{[1]}$$
 
 **Vars and shapes**
 
-Forward prop
+Forward propogation
 
 - $A^{[0]} = X$: 784 x m
 - $Z^{[1]} \sim A^{[1]}$: 10 x m
@@ -38,7 +40,7 @@ Forward prop
 - $W^{[1]}$: 10 x 10 (as $W^{[2]} A^{[1]} \sim Z^{[2]}$)
 - $B^{[2]}$: 10 x 1
 
-Backprop
+Backpropogation
 
 - $dZ^{[2]}$: 10 x m ($~A^{[2]}$)
 - $dW^{[2]}$: 10 x 10
@@ -50,3 +52,4 @@ Backprop
 Run: 
 
 1. Download the files and run the main ipynb file in a local python notebook IDE
+2. make sure the csv file is read on the
