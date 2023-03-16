@@ -52,4 +52,6 @@ Backpropogation
 Run: 
 
 1. Download the files and run the main ipynb file in a local python notebook IDE
-2. make sure the csv file is read on the
+2. You can find the datasets here: https://www.kaggle.com/competitions/digit-recognizer
+3. make sure the csv file is in your local directory or run it on kaggle
+
